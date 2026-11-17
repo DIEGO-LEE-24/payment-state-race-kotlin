@@ -10,6 +10,9 @@ version = "0.1.0"
 
 kotlin { jvmToolchain(17) }
 
+// Docker Engine 29 이상과 맞는 Testcontainers 버전으로 고정한다.
+extra["testcontainers.version"] = "1.21.3"
+
 repositories { mavenCentral() }
 
 dependencies {
