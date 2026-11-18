@@ -55,7 +55,7 @@
 
 ## 실행
 
-JDK 17과 Docker가 필요합니다.
+JDK 17과 Docker가 필요합니다. 로컬에서는 Testcontainers가 PostgreSQL을 띄우고, GitHub Actions에서는 서비스 컨테이너의 PostgreSQL을 씁니다(`TEST_DB_URL`).
 
 ```
 ./gradlew test
